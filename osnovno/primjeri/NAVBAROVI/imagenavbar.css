@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+}
+/*slika*/
+.bgimage {
+    background-image: url(/primjeri/NAVBAROVI/tomas-malik-ofO5BcxuMI0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 35vw;
+    position: relative; /*zbog smještanja navbara na sliku*/
+}
+/*navbar*/
+.navbar {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    width: 20vw;
+    min-height: 30vw;
+    padding-top: 3vw;
+    overflow-x: hidden;
+}
+
+.navbar a {
+    background-color:lightsteelblue ;
+    color: #333;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1.5vw 2vw;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color:lightsteelblue;
+}
+
+
+
+
+/*dropdown*/
+.dropdown-content {
+    display: none;
+    min-height: 3vw;
+    position: absolute;
+}
+
+.dropdown-content a {
+    background-color:lightsteelblue ;
+    color: #333;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1.5vw 2vw;
+    display: block;  
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    color:lightsteelblue;
+}
+
+.news:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}

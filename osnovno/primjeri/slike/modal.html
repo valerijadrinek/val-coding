@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Valerija Horčička">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naslov </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="modal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!--tab container-->
+        <div class="tab-container">
+            <div class="img-parent">
+                <img src="folder sa slikama/ian-schneider-dqMxDqdhg_4-unsplash 420.jpg" alt="pines covered with snow, other trees without leafes" class="smallimg"
+             id="img1" title="pines in snow">
+        
+            </div>
+            <div class="img-parent"><img src="folder sa slikama/ilya-fbfVVYSgkho-unsplash manja.jpg" alt="pines in bunch of snow under the lightblue winter sky" class="smallimg" 
+                title="pines and sky" id="img2">
+            </div>
+            <div class="img-parent"><img src="folder sa slikama/qC117ahi-mE 420.jpg" alt="lantern in deep snow surrounded by pines covered in snow during the sundown" class="smallimg"
+                 title="lantern in snow" id="img3">
+            </div>
+            <div class="img-parent"><img src="folder sa slikama/tim-gouw-rxLGSOM0e3U-unsplash manja 420.jpg" alt="wooden fens with branches covered with snow" alt="smallimg"
+                title="fens and branches in snow" class="smallimg" id="img4">
+            </div>
+        </div>
+        <!--container za modal-->
+        <div id="Modal" class="modal">
+            <span class="closebtn">&times;</span>
+            <img class="modalImg" id="imgM"> 
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            var modal = document.getElementById("Modal");
+
+            var img1 = document.getElementById("img1");
+            var img2 = document.getElementById("img2");
+            var img3 = document.getElementById("img3");
+            var img4 = document.getElementById("img4");
+            var modalImg = document.getElementById("imgM");
+            var captionText = document.getElementById("caption");
+
+           img1.onclick = function(){
+           modal.style.display = "block";
+           modalImg.src = img1.src;
+           captionText.innerHTML = this.title;
+          }
+          
+          img2.onclick = function() {
+              modal.style.display = "block";
+              modalImg.src = img2.src;
+              captionText.innerHTML = this.title;
+          }
+          
+          img3.onclick = function() {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.title;
+          }
+
+          img4.onclick = function() {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.title;
+          }
+
+          var span = document.getElementsByClassName("closebtn")[0];
+
+          span.onclick = function() {
+           modal.style.display = "none";
+         }
+    
+            
+        </script>
+        </body>

@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Modal*/
+.modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        background-color: rgba(0,0,0,0.8);
+        padding-top: 0;
+        overflow: auto;
+}
+
+/*close btn*/
+.close {
+    position: absolute;
+    top: 1vw;
+    right: 22vw;
+    color: black;
+    font-size: 4vw;
+    transition: 1s ease;
+    z-index: 3;
+}
+
+.close:hover, .close:focus {
+    font-size: 6vw;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/*Forma*/
+form {
+    border: 1px solid #ccc;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 1vw 1vw;
+    margin: 1vw 0 2vw 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    transition: 0.5s ease;
+  }
+
+  input[type=password], input[type=text] {
+    width: 100%;
+    padding: 1vw 1vw;
+    margin: 1vw 0 1vw 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    transition: 0.5s ease;
+  }
+  
+  input[type=email]:focus, input[type=password]:focus, input[type=email]:hover, 
+  input[type=password]:hover, input[type=text]:focus, input[type=text]:hover {
+    background-color: #ddd;
+    outline: none;
+    border: 2px outset dodgerblue;
+  }
+
+  input[txpe=email]:checked {
+    background-color: #f1f1f1;
+    border: none;
+  } 
+
+  input[type=checkbox] {
+    display: inline-block;
+    padding: 1vw;
+    border: none;
+    margin-bottom:  2.5vw;
+  }
+  
+  /*promjena boje placeholdera*/
+  ::placeholder {
+    color: cornflowerblue;
+  }
+
+  :-moz-placeholder {
+    color:cornflowerblue;
+  }
+
+  :-ms-input-placeholder {
+    color: cornflowerblue;
+  }
+ /*selection za copy*/
+  body::selection {
+   color: white;
+   background-color: cornflowerblue;
+  }
+
+  body::-moz-selection {
+    color: white;
+    background-color: cornflowerblue;
+  }
+  /*horizontal ruler*/
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+/*buttonsi*/
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1vw 2vw;
+    margin: 1vw 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 2vw;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  
+  .cancelbtn {
+    padding: 1vw 2vw;
+    background-color: #f44336;
+  }
+  
+
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  
+  .container {
+    padding: 1vw;
+  }
+  
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /*zoom animacija*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  
+  /* responsive */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 100%;
+    font-family: fantasy;
+
+}
+
+.parallax {
+    background-image: url("/primjeri/slike/slikice/ilya-fbfVVYSgkho-unsplash\ veca.jpg");
+
+    height: 100%;
+    /*parallax scrolling efect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scrolling {
+    height: 45vw;
+    color: white;
+    background-color: cornflowerblue;
+    opacity: 0.8;
+}
+
+.scrolling p {
+    font-size: 2vw;
+}
+
+.scrolling h2 {
+    font-size: 3vw;
+}
+
+/*responsive- neki mobilni imaju problema sa attachment-fixed pa ih treba isključiti za mobitele*/
+@media only screen and (max-device-width: 800px) {
+    .parallax {
+        background-attachment: scroll;
+        height: 60vw;
+    }
+    
+    .scrolling p {
+        font-size: 3vw;
+    }
+
+    .scrolling h2 {
+        font-size: 4.5vw;
+    }
+
+    .dvojka {
+        display: none;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Valerija Horčička">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login modal </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="loginmodal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <button onclick="document.getElementById('forma').style.display = 'block'">Login forma</button>
+        
+        <!--forma-->
+        <div id="forma" class="modal">
+            <form class="modal-content animate" action="/action_page.php">
+                <span onclick="document.getElementById('forma').style.display='none'" class="close" title="Zatvori formu">&timesbar;</span>
+                
+                <div class="img-parent">
+                    <img src="/primjeri/slike/folder sa slikama/qC117ahi-mE 420.jpg" alt="avatar slika fenjer" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Username:</b></label>
+                    <input  name="uname" type="text" placeholder="Enter username" required>
+
+                    <label for="psw"><b>Password:</b></label>
+                    <input name="psw" type="password" placeholder="Enter password" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input name="remember" type="checkbox" checked>Remember me
+                    </label>
+                </div>
+                <div class="container" style="background-color: #f1f1f1;">
+                    <button type="button" onclick="document.getElementById('forma').style.display = 'none'" class="cancelbtn">Close</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+        <script>
+            var modal = document.getElementById("forma");
+
+            window.onclick = function(event) {
+               if (event.target==modal) {
+                   modal.style.display = "none";
+               }
+            }
+        </script>
+    </body>

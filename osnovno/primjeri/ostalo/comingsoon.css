@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-size: 100%;
+}
+
+/*backgroundimage sa svim ostalim*/
+.bgimg {
+    background-image: url("/primjeri/slike/slikice/qC117ahi-mE\ 1280.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: white;
+    font-size: 2vw;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    animation: size 1.3s ease-in-out infinite alternate, glow 1.3s ease-in-out infinite alternate;
+    
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 0;
+    right: 1vw;
+}
+
+#demo {
+    text-shadow: 0.2vw 0.2vw grey;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+/*glow animation*/
+@keyframes glow { 
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #99ff, 0 0 40px #99ff, 0 0 50px #99ff, 0 0 60px #99ff, 0 0 70px #99ff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #bebe, 0 0 40px #bebe, 0 0 50px #bebe, 0 0 60px #bebe, 0 0 70px #bebe, 0 0 80px #bebe;
+    }
+}
+
+@-webkit-keyframes glow { 
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #99ff, 0 0 40px #99ff, 0 0 50px #99ff, 0 0 60px #99ff, 0 0 70px #99ff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #bebe, 0 0 40px #bebe, 0 0 50px #bebe, 0 0 60px #bebe, 0 0 70px #bebe, 0 0 80px #bebe;
+    }
+}
+
+@-moz-keyframes glow { 
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #99ff, 0 0 40px #99ff, 0 0 50px #99ff, 0 0 60px #99ff, 0 0 70px #99ff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #bebe, 0 0 40px #bebe, 0 0 50px #bebe, 0 0 60px #bebe, 0 0 70px #bebe, 0 0 80px #bebe;
+    }
+}
+
+@-o-keyframes glow { 
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #99ff, 0 0 40px #99ff, 0 0 50px #99ff, 0 0 60px #99ff, 0 0 70px #99ff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #bebe, 0 0 40px #bebe, 0 0 50px #bebe, 0 0 60px #bebe, 0 0 70px #bebe, 0 0 80px #bebe;
+    }
+}
+
+/*size animation*/
+@keyframes size {
+    from {
+        font-size: 2vw;
+    }
+
+    to {
+        font-size: 3vw;
+    }
+}
+
+@-webkit-keyframes size {
+    from {
+        font-size: 2vw;
+    }
+
+    to {
+        font-size: 3vw;
+    }
+}
+
+@-moz-keyframes size {
+    from {
+        font-size: 2vw;
+    }
+
+    to {
+        font-size: 3vw;
+    }
+}
+
+@-o-keyframes size {
+    from {
+        font-size: 2vw;
+    }
+
+    to {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+}
+/*container za sidebar i aside*/
+.responsive-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1vw;
+}
+/*sidebar*/
+.sidebar {
+    flex: 40%;
+    background-color: rgb(75, 74, 74);
+    overflow: hidden;
+}
+
+.sidebar a {
+    color: snow;
+    display: block;
+    font-size: 4vw;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #c2c2c2;
+    color: #333;
+}
+
+.active {
+    color: white;
+    background-color : steelblue;
+}
+
+/*aside content*/
+.aside {
+    flex: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 3vw;
+    padding: 2vw;
+    margin-left: 1vw;
+    background-color: steelblue;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px) {
+    .responsive-container {
+      flex-direction: column;
+    }
+#aside {
+        margin-top: 1vw;
+        min-height: 45vw !important;
+    }
+        
+    
+}

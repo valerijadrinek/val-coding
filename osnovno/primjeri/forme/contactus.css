@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*forma*/
+.container {
+    border-radius: 5px;
+    background-color:  #f2f2f2;
+    padding: 2vw;
+    border: 2px solid black;
+    width: 75%;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+textarea {
+    min-height: 10vw;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 1.2vw;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    resize: vertical;
+    transition: 0.5s ease;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+    border: 3px inset dodgerblue;
+    background-color: floralwhite;
+    color: #333;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1.2vw 2vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+input[type=submit]:hover {
+    opacity: .8;
+}

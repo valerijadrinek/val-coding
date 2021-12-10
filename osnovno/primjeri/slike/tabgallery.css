@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+}
+/*tab container*/
+.tab-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tab-container > .img-parent {
+    flex: 17%;
+    padding: 1vw;
+    overflow: hidden;
+    border-radius: 10px 0;
+}
+
+.smallimg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.smallimg:hover {
+    opacity: 1;
+}
+
+.tab-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.iza {
+    text-align: center;
+    font-size: 8vw;
+    
+}
+/*big container*/
+.big-container {
+    display: none;
+    position: relative;
+    margin: 1vw;
+}
+
+.closebtn {
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    color: white;
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+#bigImg {
+    width: 100%;
+    margin: auto;
+    padding-left:0;
+    max-height: 45vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#imgText {
+    position: absolute;
+    bottom: 1vw;
+    left: 30%;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    text-shadow: 0.1vw 0.2vw darkgrey;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+   .tab-container > .img-parent {
+       flex: 45%;
+       max-width: 50%;
+   }
+    
+}

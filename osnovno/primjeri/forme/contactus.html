@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Valerija Horčička">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login modal </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="contactus.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname" name="fname"><b>First name :</b></label>
+                <input  name="fname" id="fname" type="text" placeholder="Enter your name...">
+
+                <label for="lname"><b>Last name :</b></label>
+                <input name="lname" id="lname" type="text" placeholder="Enter your last name...">
+
+                <label for="country" id="country"><b>Country :</b></label>
+                <select name="country">
+                    <option value="Croatia">Hrvatska</option>
+                    <option value="Serbia">Srbija</option>
+                    <option value="Bosna and Hercegovina">Bosna i Hercegovina</option>
+                    <option value="Slovenia">Slovenija</option>
+                </select>
+
+                <label for="write"><b>Leave us a message :</b></label>
+                <textarea name="write" id="write" placeholder="Write something here..."></textarea>
+
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+    </body>

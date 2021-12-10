@@ -1,0 +1,197 @@
+* {box-sizing: border-box;}
+body {
+    background-color:lightseagreen;
+    margin: 0;
+    font-size: 100%;
+}
+/* Slideshow container*/
+
+.slideshow-container {
+    width: 60%;
+    height: 50%;
+    position: relative;
+    margin: auto;
+    box-shadow:  5px 5px #3f3f3f; 
+    overflow: hidden;
+    display: block;
+    float: right;
+    border-radius: 5%;
+}
+
+.mySlides {
+    display: block;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+/* Next ˛& previous buttons*/
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:cornsilk;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0,6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+
+}
+/* Position next button to the right*/
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/*On hover add a black color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text*/
+.text {
+    color:cornsilk;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text*/
+.numbertext {
+    color:seashell;
+    font-size: 2vw;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+
+}
+
+/* the dots*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease-in-out;
+   
+} 
+.dot-container {
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+   
+
+}
+
+.active, .dot:hover {
+    background-color: #3f3f3f;
+}
+
+/* Fading animation*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+img {
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+    object-position: center;
+
+}
+/*#tele {
+    width:100%;
+    height: 100%;
+    position: apsolute;
+    bottom: 0;
+    aspect-ratio: 1.5;
+
+}
+
+.img-parent {
+    border-radius: 100px;
+    overflow: hidden;
+}*/
+
+@media screen and (min-width: 993px) {
+    body {
+        height: 1200px;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        height: 700px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    body {
+        height: 800px;
+    }
+    
+}
+.menu {
+    float: right;
+    width: 30%;
+    border: 0.3em outset #6e6e6e;
+    height: 50%;
+    background-color: rgb(216, 226, 226);
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #3f3f3f;
+    font-size: 2.2em;
+    margin: 1em;
+    text-align: center;
+    padding: 0.3em;
+}
+.menu a:hover {
+    background-color:darkgrey;
+    color: whitesmoke;
+}
+
+.iconbar {
+    width:10%;
+    float:left;
+    height:50%;
+    background-color: #555;
+}
+.iconbar a {
+    display: block;
+    text-align: center;
+    padding: 1vw;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 8vw;
+}

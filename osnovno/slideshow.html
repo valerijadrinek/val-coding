@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="slideshow, nature">
+        <meta name="description" content="practicing to learn codfing">
+        <meta name="author" content="Valerija Horčička">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh">
+        <title>Slideshow practice</title>
+        <link rel="stylesheet" href="slideshow.css">
+      
+    </head>
+    <body>
+       
+        <div class="menu">
+            <a href="">About us</a><hr>
+            <a href="">Gallery</a><hr>
+            <a href="">Recomandations</a><hr>
+            <a href="">Contact</a>
+        </div>
+        <div class="slideshow-container">
+            <!--Full width images with number and caption text-->
+            
+            <div class="mySlides fade" style="background-image: url(zeko.jpg);">
+                <div class="numbertext">1/3</div>
+                <!--<div class="img-parent">
+                    <img src="zeko.jpg" >
+                </div>-->
+                <div class="text">Caption text</div>
+            </div>
+            <div class="mySlides fade" style="background-image: url(telad2.jpg);">
+                <div class="numbertext">2/3</div>
+                 <!-- <div class="img-parent">
+                    <img src="telad2.jpg" id="tele"></div>-->
+                
+                <div class="text">Caption text</div>
+            </div>
+            <div class="mySlides fade" style="background-image: url(pas.jpg);">
+                <div class="numbertext">3/3</div>
+                <!--<div class="img-parent">
+                <img src="pas.jpg" ></div>-->
+                <div class="text">Caption text</div>
+            </div>
+            <!--Next and previous buttons-->
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dot-container" style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        
+        <br>
+        <!--the dots/circles-->
+       
+        <script src="slideshow.js"></script>
+    </body>
+
+</html>

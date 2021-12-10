@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Valerija Horčička">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naslov </title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="stickynavbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <div class="header"> Ovo je veliki header</div>
+    <!--sticky navbar-->
+    <div class="navbar" id="navbar">
+        <a href="#" class="active"><i class="fa fa-home"></i></a>
+        <div class="dropdown" id="dropdown">
+            <button class="dropbtn">News
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+    <!--primjer drugog diva-->
+    <div  class="content" style="padding:15px 15px 2500px;font-size:30px">
+        <p><b>This example demonstrates how to slide down a navbar when the user starts to scroll the page.</b></p>
+        <p id="demo"></p>
+        <p>Scroll down this frame to see the effect!</p>
+        <p>Scroll to the top to hide the navbar.</p>
+        <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!--skripta za sticky navbar-->
+      <!--
+      <script>
+        window.onscroll = function() {stickyFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+                dropdown.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+      </script> -->
+
+      <!--skripta za pozdrav-->
+      <script>
+          if (new Date().getHours() > 18) {
+              document.getElementById("demo").innerHTML = "Good evening!";
+          } else if (new Date().getHours > 11) {
+              document.getElementById("demo").innerHTML = "Good day!";
+          } else {
+              document.getElementById("demo").innerHTML ="Good morning!";
+          }
+      </script>
+      </body>

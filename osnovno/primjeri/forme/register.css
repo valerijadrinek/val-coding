@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*forma register*/ 
+.register {
+    width: 70%;
+    margin: auto;
+}
+.container {
+    padding : 2vw;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 1vw;
+    margin: 1vw 0 2vw 0;
+    display: inline-block;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"] {
+    background-color: #ddd;
+    border: none;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f2f2f2;
+    margin-top: 2.5vw;
+}
+
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1.5vw 2vw;
+    margin: 1vw 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 2vw;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+  }
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.registerbtn:out-of-range {
+    opacity: 0.9;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 1.5vw 2vw;
+}
+/*message*/
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 1.5vw 2vw;
+    margin-top: 1.5vw;
+  }
+  
+  #message p {
+    padding: 1vw 2vw;
+    font-size: 1.3vw;
+  }
+  
+  /* isparvno, dodaje kvačicu */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: '\2714';
+  }
+  
+  /* krivo, dodaje x */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: '\2716';
+  }
+  
+
+/*forma newsletter*/
+.newsletter {
+    width: 70%;
+    margin: auto;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1.5vw 2vw;
+    margin: 1vw 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px) {
+    .register {
+        width: 100%;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+}

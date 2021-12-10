@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="modalightbox.css">
+         <script src="modalightbox.js"></script>
+         <title>modalightbox</title>
+         <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--slike za otvoriti lightbox-->
+       <div class="row">
+           <div class="column" >
+            <img src="/primjeri/sapice_files/peso1 (1).jpg " alt="slika psa br1" class="hover-shadow" onclick="openModal(); currentSlide(1)">
+          </div>
+           <div class="column">
+            <img src="/primjeri/sapice_files/peso2 mala.jpg" alt="slika psa br2" class="hover-shadow" onclick="openModal(); currentSlide(2)">
+           </div>
+           <div class="column">
+            <img src="/primjeri/sapice_files/peso3 mala.jpg" alt="slika psa br3" class="hover-shadow" onclick="openModal(); currentSlide(3)">
+           </div>
+           <div class="column">
+            <img src="/primjeri/sapice_files/peso4 mala.jpg" alt="slika psa br4" class="hover-shadow" onclick="openModal(); currentSlide(4)">
+           </div>
+        <div class="column">
+            <img src="/primjeri/sapice_files/peso 5 mala.jpg" alt="slika psa br5" class="hover-shadow" onclick="openModal(); currentSlide(5)">
+        </div>
+       </div>
+
+       <!--Modal/lightbox-->
+       <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="/primjeri/sapice_files/peso1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="/primjeri/sapice_files/peso2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="/primjeri/sapice_files/peso3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="/primjeri/sapice_files/peso4.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="/primjeri/sapice_files/peso5.jpg" style="width:100%">
+          </div>
+      
+          <!-- Next/previous kontrole-->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail kontrole -->
+          <div class="column">
+            <img class="demo" src="/primjeri/sapice_files/peso1 (1).jpg" onclick="currentSlide(1)" alt="Pesek br1">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="/primjeri/sapice_files/peso2 mala.jpg" onclick="currentSlide(2)" alt="Pesek br2">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="/primjeri/sapice_files/peso3 mala.jpg" onclick="currentSlide(3)" alt="Pesek br3">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="/primjeri/sapice_files/peso4 mala.jpg" onclick="currentSlide(4)" alt="Pesek br4">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="/primjeri/sapice_files/peso 5 mala.jpg" onclick="currentSlide(5)" alt="Pesek br5">
+          </div>
+        </div>
+       </div>
+
+    </body>
+</html>

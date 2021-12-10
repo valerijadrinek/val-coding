@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+}
+/*tab container*/
+.tab-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tab-container > .img-parent {
+    flex: 17%;
+    padding: 1vw;
+    overflow: hidden;
+    border-radius: 10px 0;
+    position: relative;
+}
+
+.smallimg {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+/*overlaysi*/
+.imgtitler {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.3);
+    color: white;
+    width: 90%;
+    transition: 1s ease;
+    opacity: 0;
+    font-size: 1vw;
+    padding: auto;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 2vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+ .img-parent:hover .imgtitler {
+    opacity: 1;
+}
+
+.zoom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.3);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.text {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    transform: translate(-50%, -80%);
+    text-align: center;
+  }
+
+.img-parent:hover .zoom {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.slider {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.3);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.img-parent:hover .slider {
+    bottom: 0;
+    height: 100%;
+}
+
+h2 {
+    font-size: 2vw;
+}
+.tab-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+    .tab-container > .img-parent {
+        flex: 45%;
+        max-width: 50%;
+    }
+}
